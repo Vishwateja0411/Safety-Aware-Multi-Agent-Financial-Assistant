@@ -16,3 +16,10 @@ class ClassificationResult(BaseModel):
     safety: dict[str, str] = Field(
         default_factory=lambda: {"verdict": "safe", "reason": "passed local guard"}
     )
+
+
+class ChatRequest(BaseModel):
+    query: str
+    session_id: str = "demo-session"
+    user_id: str | None = None
+    user_context: dict[str, Any] | None = None
