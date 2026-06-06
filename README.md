@@ -6,10 +6,15 @@ This is a small FastAPI service for the Valura AI assignment. It implements the 
 SSE endpoint -> local safety guard -> intent classifier -> router -> portfolio health agent or stub agent
 ```
 
+<<<<<<< HEAD
 The implementation is intentionally simple and readable. The goal was to build a working fresher-friendly MVP that handles the required edge cases without hiding the logic behind too many abstractions.
 
 ## What Is Implemented
 
+=======
+## What Is Implemented
+
+>>>>>>> be2853eeb18091c8b2a69b9062e2e57b9fce2aa4
 - Local safety guard with no LLM or network call
 - Intent classifier with one OpenAI call when `OPENAI_API_KEY` is set
 - Rule-based classifier fallback when the LLM is unavailable
@@ -143,11 +148,15 @@ Cost target reasoning:
 - Safety-blocked queries use no model call.
 - Portfolio Health itself is deterministic.
 
+<<<<<<< HEAD
 ## Defence Video
 
 Video link: TODO - add unlisted YouTube URL before final submission.
 
 ## What I Would Improve With Another Week
+=======
+## What can be Improved
+>>>>>>> be2853eeb18091c8b2a69b9062e2e57b9fce2aa4
 
 - Add real market data through `yfinance` or MCP and compute actual returns.
 - Persist memory in SQLite/Postgres.
