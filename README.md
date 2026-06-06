@@ -9,12 +9,9 @@ SSE endpoint -> local safety guard -> intent classifier -> router -> portfolio h
 <<<<<<< HEAD
 The implementation is intentionally simple and readable. The goal was to build a working fresher-friendly MVP that handles the required edge cases without hiding the logic behind too many abstractions.
 
+
 ## What Is Implemented
 
-=======
-## What Is Implemented
-
->>>>>>> be2853eeb18091c8b2a69b9062e2e57b9fce2aa4
 - Local safety guard with no LLM or network call
 - Intent classifier with one OpenAI call when `OPENAI_API_KEY` is set
 - Rule-based classifier fallback when the LLM is unavailable
